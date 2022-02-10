@@ -1,0 +1,163 @@
+/* #fff=16進数での書き方 */
+.header {
+  background-color: #062742;
+  padding: 14px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left img {
+  height: 36px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.welcome {
+  background-image: url(../img/background.jpg);
+  /* vh = view height 今見えている部分の高さ */
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  padding-top: 280px;
+  font-size: 80px;
+  animation-name: bigger-font;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes bigger-font {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+
+.guideline {
+  margin-top: 20px;
+}
+
+.guideline li {
+  font-size: 40px;
+}
+
+.guideline li:nth-child(2) {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+.contents {
+  display: flex;
+  max-width: 985px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contents img {
+  width: 230px;
+}
+
+#programming {
+  padding-top: 40px;
+}
+
+#programming .contents p {
+  margin-right: 30px;
+  order: -1;
+}
+
+#english {
+  margin-top: 60px;
+}
+
+#english .contents p {
+  margin-left: 20px;
+}
+
+.contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact button {
+  font-size: 30px;
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: khaki;
+}
+
+.footer {
+  background-color: #062742;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .welcome {
+    height: 300px;
+  }
+  .title {
+    padding-top: 50px;
+    font-size: 40px;
+  }
+  .guideline li {
+    font-size: 20px;
+  }
+
+  .guideline li:nth-child(2) {
+    margin: 10px 0;
+  }
+
+  .contents {
+    flex-direction: column;
+  }
+  .contents img {
+    width: 275px;
+  }
+  #programming .contents p {
+    margin: 0 20px;
+    order: unset;
+  }
+  #english .contents p {
+    margin-top: 20px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+}
