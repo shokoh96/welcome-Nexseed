@@ -101,24 +101,6 @@ h2 {
   margin-left: 20px;
 }
 
-.contact {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.contact button {
-  font-size: 30px;
-  padding: 10px;
-  background-color: skyblue;
-  border-radius: 10px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-button:hover {
-  background-color: khaki;
-}
-
 .footer {
   background-color: #062742;
   color: #fff;
